@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VkV-GD-hQx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="1ae-HR-IQk">
+            <objects>
+                <navigationController id="VkV-GD-hQx" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ec6-lb-X3k">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Hlt-YG-C1n">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="i9D-yh-BQc" kind="relationship" relationship="rootViewController" id="xKd-cD-5YP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hwX-3L-CuB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-458" y="716"/>
+        </scene>
+        <!--History View Controller-->
+        <scene sceneID="fso-aj-d0v">
+            <objects>
+                <viewController storyboardIdentifier="HistoryViewController" id="29C-ek-wTW" customClass="HistoryViewController" customModule="ModulAid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fE3-mP-UaU"/>
+                        <viewControllerLayoutGuide type="bottom" id="HGy-u6-9Y2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="byS-A1-h5e">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Unu-aW-Nye">
+                                <rect key="frame" x="70" y="130" width="420" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Past Measurements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0h3-WH-iXb">
+                                <rect key="frame" x="149" y="101" width="152" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.55656438533394514" green="0.47242638626301653" blue="0.62640224358974361" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Unu-aW-Nye" firstAttribute="leading" secondItem="byS-A1-h5e" secondAttribute="leadingMargin" constant="-20" id="9x3-aC-R2J"/>
+                            <constraint firstItem="Unu-aW-Nye" firstAttribute="centerX" secondItem="byS-A1-h5e" secondAttribute="centerX" id="CBW-FE-pli"/>
+                            <constraint firstItem="Unu-aW-Nye" firstAttribute="centerY" secondItem="byS-A1-h5e" secondAttribute="centerY" id="H3m-5q-OEi"/>
+                            <constraint firstItem="HGy-u6-9Y2" firstAttribute="top" secondItem="Unu-aW-Nye" secondAttribute="bottom" id="TQ9-h8-ZiE"/>
+                            <constraint firstItem="Unu-aW-Nye" firstAttribute="top" secondItem="byS-A1-h5e" secondAttribute="topMargin" id="c0V-t2-iaP"/>
+                            <constraint firstItem="Unu-aW-Nye" firstAttribute="top" secondItem="0h3-WH-iXb" secondAttribute="bottom" id="doT-Lc-T5H"/>
+                            <constraint firstItem="0h3-WH-iXb" firstAttribute="centerX" secondItem="byS-A1-h5e" secondAttribute="centerX" id="mAG-rT-0lx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="WF6-mf-e6x">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="2" id="fGi-NI-RyC">
+                            <rect key="frame" x="20" y="7" width="560" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Heat Map"/>
+                                <segment title="Home"/>
+                                <segment title="History"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedControlPresses:" destination="29C-ek-wTW" eventType="valueChanged" id="ZTQ-Ut-CKn"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Unu-aW-Nye" id="KDx-cX-7UA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FhR-sG-nuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="24"/>
+        </scene>
+        <!--Modul Aid View Controller-->
+        <scene sceneID="LjT-9c-NQS">
+            <objects>
+                <viewController id="i9D-yh-BQc" customClass="ModulAidViewController" customModule="ModulAid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pf8-f4-Elf"/>
+                        <viewControllerLayoutGuide type="bottom" id="8ha-Zn-DPE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hjT-bw-vvw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uSn-G4-FCD">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="1" id="IRR-vt-u8Y">
+                            <rect key="frame" x="20" y="7" width="560" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Heat Map"/>
+                                <segment title="Home"/>
+                                <segment title="History"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedControlPresses:" destination="SJB-Th-FPM" eventType="valueChanged" id="i4F-IY-saU"/>
+                                <action selector="segmentedControlPresses:" destination="i9D-yh-BQc" eventType="valueChanged" id="rQZ-eR-XPd"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L5O-hA-BWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="320" y="718"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="z0h-9D-08b">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="pEz-sS-r0f" customClass="HomeViewController" customModule="ModulAid" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yz4-tx-oSx"/>
+                        <viewControllerLayoutGuide type="bottom" id="0JJ-gS-WnG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CxJ-aX-GVq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1W6-ht-4g8">
+                                <rect key="frame" x="200" y="89" width="200" height="421"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bg5-zr-yDV">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="421"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select your device:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYV-JL-WcO">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0tq-18-AD4">
+                                                <rect key="frame" x="0.0" y="21" width="200" height="200"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                                <state key="normal" title="Thermometer" backgroundImage="Thermometer">
+                                                    <color key="titleColor" red="1" green="0.0" blue="0.04677283753" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="9ev-Hb-zgp" kind="show" id="lR5-WT-IDU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgN-hk-47y">
+                                                <rect key="frame" x="0.0" y="221" width="200" height="200"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="24"/>
+                                                <state key="normal" title="Heart Monitor" backgroundImage="HeartRate">
+                                                    <color key="titleColor" red="1" green="0.0" blue="0.04677283753" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="dfg-mo-MuZ" kind="show" id="td6-kE-Y5o"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1W6-ht-4g8" firstAttribute="centerX" secondItem="CxJ-aX-GVq" secondAttribute="centerX" id="6YK-UJ-cpb"/>
+                            <constraint firstItem="1W6-ht-4g8" firstAttribute="centerX" secondItem="CxJ-aX-GVq" secondAttribute="centerX" id="gTB-aj-gNZ"/>
+                            <constraint firstItem="1W6-ht-4g8" firstAttribute="centerY" secondItem="CxJ-aX-GVq" secondAttribute="centerY" id="p7R-uc-DVq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j5h-G3-Pn3">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" momentary="YES" id="Xyk-q4-Tbn">
+                            <rect key="frame" x="20" y="7" width="560" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Heat Map"/>
+                                <segment title="Home"/>
+                                <segment title="History"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedControlPresses:" destination="pEz-sS-r0f" eventType="valueChanged" id="3L8-cf-VVM"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sYM-HX-Yo0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="716"/>
+        </scene>
+        <!--Heat Map View Controller-->
+        <scene sceneID="ISt-wg-wuR">
+            <objects>
+                <viewController storyboardIdentifier="HeatMapViewController" id="SJB-Th-FPM" customClass="HeatMapViewController" customModule="ModulAid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CdQ-h4-yyF"/>
+                        <viewControllerLayoutGuide type="bottom" id="Zbt-LT-B6f"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vMU-0p-KCm">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DB3-i0-gD1">
+                                <rect key="frame" x="130" y="85" width="340" height="430"/>
+                            </mapView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ada-fD-iwk">
+                                <rect key="frame" x="130" y="85" width="340" height="430"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.13107131442644882" green="0.62924877447364103" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ada-fD-iwk" firstAttribute="centerX" secondItem="vMU-0p-KCm" secondAttribute="centerX" id="ARR-6j-apn"/>
+                            <constraint firstItem="ada-fD-iwk" firstAttribute="centerY" secondItem="vMU-0p-KCm" secondAttribute="centerY" id="IwT-Jm-laL"/>
+                            <constraint firstItem="DB3-i0-gD1" firstAttribute="centerX" secondItem="vMU-0p-KCm" secondAttribute="centerX" id="bgs-i8-TKu"/>
+                            <constraint firstItem="DB3-i0-gD1" firstAttribute="centerY" secondItem="vMU-0p-KCm" secondAttribute="centerY" id="bjN-RB-1dg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="VdR-JJ-Sgw">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="LJA-gc-bxK">
+                            <rect key="frame" x="20" y="7" width="560" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Heat Map"/>
+                                <segment title="Home"/>
+                                <segment title="History"/>
+                            </segments>
+                            <connections>
+                                <action selector="segmentedControlPresses:" destination="SJB-Th-FPM" eventType="valueChanged" id="8jb-0p-wWI"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="heatMapImage" destination="ada-fD-iwk" id="VOe-i4-fqe"/>
+                        <outlet property="mapView" destination="DB3-i0-gD1" id="0OO-Te-liC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="evG-Pm-Tft" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="1418"/>
+        </scene>
+        <!--Heart Rate Monitor View Controller-->
+        <scene sceneID="wTn-lh-Una">
+            <objects>
+                <viewController id="dfg-mo-MuZ" customClass="HeartRateMonitorViewController" customModule="ModulAid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ei4-W4-hjp"/>
+                        <viewControllerLayoutGuide type="bottom" id="wDL-wI-1Kb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5eB-69-H4Y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="33d-Rx-S1T">
+                                <rect key="frame" x="0.0" y="64" width="294" height="226"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="HeartRate" translatesAutoresizingMaskIntoConstraints="NO" id="dTo-rd-h9i">
+                                        <rect key="frame" x="80" y="37" width="138" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="138" id="eaA-ge-0aL"/>
+                                            <constraint firstAttribute="height" constant="128" id="fj3-GV-NlD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xo2-gL-gpE">
+                                        <rect key="frame" x="80" y="173" width="138" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Okay!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okayButtonPushed:" destination="9ev-Hb-zgp" eventType="touchUpInside" id="V5N-xY-CZb"/>
+                                            <action selector="okayButtonPushed:" destination="dfg-mo-MuZ" eventType="touchUpInside" id="qLl-NT-s3t"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="put heartrate monitor under your arm" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rc-3n-yMa">
+                                        <rect key="frame" x="5" y="8" width="285" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.65739924630000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dTo-rd-h9i" firstAttribute="centerY" secondItem="33d-Rx-S1T" secondAttribute="centerY" id="6uu-tu-jZg"/>
+                                    <constraint firstItem="1rc-3n-yMa" firstAttribute="centerX" secondItem="33d-Rx-S1T" secondAttribute="centerX" id="DJn-1f-d0J"/>
+                                    <constraint firstAttribute="bottom" secondItem="xo2-gL-gpE" secondAttribute="bottom" constant="8" id="Hee-xq-7Ew"/>
+                                    <constraint firstItem="dTo-rd-h9i" firstAttribute="centerX" secondItem="33d-Rx-S1T" secondAttribute="centerX" id="ddc-Gt-wZv"/>
+                                    <constraint firstItem="xo2-gL-gpE" firstAttribute="centerX" secondItem="33d-Rx-S1T" secondAttribute="centerX" id="nGp-yT-9YU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CZ6-4K-v8d">
+                                <rect key="frame" x="0.0" y="407" width="294" height="193"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="your pulse is..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdV-9A-deY">
+                                        <rect key="frame" x="92" y="8" width="111" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Upg-g0-8Ip">
+                                        <rect key="frame" x="108" y="86" width="79" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wIT-nr-IQu">
+                                        <rect key="frame" x="55" y="155" width="184" height="30"/>
+                                        <state key="normal" title="take another measurement">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takeAnotherRateButtonPushed:" destination="dfg-mo-MuZ" eventType="touchUpInside" id="zfB-Xc-cI7"/>
+                                            <action selector="takeAnotherTempButtonPushed:" destination="9ev-Hb-zgp" eventType="touchUpInside" id="QOX-cd-p51"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.65739924630000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ZdV-9A-deY" firstAttribute="centerX" secondItem="CZ6-4K-v8d" secondAttribute="centerX" id="I3v-eA-WdR"/>
+                                    <constraint firstItem="wIT-nr-IQu" firstAttribute="centerX" secondItem="CZ6-4K-v8d" secondAttribute="centerX" id="QEX-SP-ei9"/>
+                                    <constraint firstAttribute="bottom" secondItem="wIT-nr-IQu" secondAttribute="bottom" constant="8" id="cu1-hi-F0d"/>
+                                    <constraint firstItem="Upg-g0-8Ip" firstAttribute="centerY" secondItem="CZ6-4K-v8d" secondAttribute="centerY" id="ljs-z7-BWM"/>
+                                    <constraint firstItem="ZdV-9A-deY" firstAttribute="top" secondItem="CZ6-4K-v8d" secondAttribute="top" constant="8" id="mLE-Sm-dM0"/>
+                                    <constraint firstItem="Upg-g0-8Ip" firstAttribute="centerX" secondItem="CZ6-4K-v8d" secondAttribute="centerX" id="vrt-CZ-dJf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="294" placeholderIntrinsicHeight="77" translatesAutoresizingMaskIntoConstraints="NO" id="Ryn-lD-lmE">
+                                <rect key="frame" x="0.0" y="304" width="294" height="77"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Dhs-Ra-QwL">
+                                        <rect key="frame" x="137" y="37" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="taking pulse..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzT-MU-3Oa">
+                                        <rect key="frame" x="94" y="8" width="107" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.65739924630000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Dhs-Ra-QwL" firstAttribute="centerY" secondItem="Ryn-lD-lmE" secondAttribute="centerY" id="0Nn-BX-K64"/>
+                                    <constraint firstItem="Dhs-Ra-QwL" firstAttribute="centerX" secondItem="Ryn-lD-lmE" secondAttribute="centerX" id="X2M-Gv-YB2"/>
+                                    <constraint firstItem="lzT-MU-3Oa" firstAttribute="centerX" secondItem="Ryn-lD-lmE" secondAttribute="centerX" id="fGk-IQ-iQ2"/>
+                                    <constraint firstItem="lzT-MU-3Oa" firstAttribute="top" secondItem="Ryn-lD-lmE" secondAttribute="top" constant="8" id="ung-Nz-pbn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstView" destination="33d-Rx-S1T" id="s7R-m4-8eQ"/>
+                        <outlet property="heartRateLabel" destination="Upg-g0-8Ip" id="Uaf-r2-gGw"/>
+                        <outlet property="secondView" destination="Ryn-lD-lmE" id="t9j-xp-skg"/>
+                        <outlet property="thirdView" destination="CZ6-4K-v8d" id="YLM-bE-m9h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MRi-lu-Zfl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2396" y="718"/>
+        </scene>
+        <!--Temperature Taker View Controller-->
+        <scene sceneID="2DE-B9-B50">
+            <objects>
+                <viewController id="9ev-Hb-zgp" customClass="TemperatureTakerViewController" customModule="ModulAid" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8YD-kW-wL6"/>
+                        <viewControllerLayoutGuide type="bottom" id="t5P-PN-ArH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ma6-Lv-XQu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="viF-NC-FbX">
+                                <rect key="frame" x="0.0" y="64" width="294" height="226"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="point the thermometer at forehead" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vv-oS-Ae0">
+                                        <rect key="frame" x="10" y="8" width="278" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="forehead" translatesAutoresizingMaskIntoConstraints="NO" id="MkG-b5-f1O">
+                                        <rect key="frame" x="80" y="37" width="138" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="Cpf-7O-mZP"/>
+                                            <constraint firstAttribute="width" constant="138" id="vO5-dh-ZNH"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZV-of-y6O">
+                                        <rect key="frame" x="80" y="173" width="138" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Okay!">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="okayButtonPushed:" destination="9ev-Hb-zgp" eventType="touchUpInside" id="tDr-eV-55g"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.65739924630000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="MkG-b5-f1O" firstAttribute="centerY" secondItem="viF-NC-FbX" secondAttribute="centerY" id="Cvk-p6-5z4"/>
+                                    <constraint firstItem="vZV-of-y6O" firstAttribute="centerX" secondItem="viF-NC-FbX" secondAttribute="centerX" id="c5y-Hu-6Hy"/>
+                                    <constraint firstItem="0vv-oS-Ae0" firstAttribute="centerX" secondItem="viF-NC-FbX" secondAttribute="centerX" id="d2Q-0x-K0t"/>
+                                    <constraint firstItem="MkG-b5-f1O" firstAttribute="centerX" secondItem="viF-NC-FbX" secondAttribute="centerX" id="g4z-SZ-8gF"/>
+                                    <constraint firstAttribute="bottom" secondItem="vZV-of-y6O" secondAttribute="bottom" constant="8" id="sKR-ea-q4w"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eor-be-NUK">
+                                <rect key="frame" x="0.0" y="407" width="294" height="193"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="your temperature is..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JgZ-eR-iY6">
+                                        <rect key="frame" x="65" y="8" width="164" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="98.8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dz4-vF-cDv">
+                                        <rect key="frame" x="108" y="86" width="79" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7y-zf-RTr">
+                                        <rect key="frame" x="60" y="155" width="175" height="30"/>
+                                        <state key="normal" title="take another temperature">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="takeAnotherTempButtonPushed:" destination="9ev-Hb-zgp" eventType="touchUpInside" id="BuE-r3-E2c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.65739924630000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="JgZ-eR-iY6" firstAttribute="top" secondItem="Eor-be-NUK" secondAttribute="top" constant="8" id="0Py-JB-j1n"/>
+                                    <constraint firstItem="dz4-vF-cDv" firstAttribute="centerX" secondItem="Eor-be-NUK" secondAttribute="centerX" id="WBt-Bq-BtT"/>
+                                    <constraint firstItem="m7y-zf-RTr" firstAttribute="centerX" secondItem="Eor-be-NUK" secondAttribute="centerX" id="ZhH-td-BLk"/>
+                                    <constraint firstItem="JgZ-eR-iY6" firstAttribute="centerX" secondItem="Eor-be-NUK" secondAttribute="centerX" id="dqh-Fn-ba2"/>
+                                    <constraint firstItem="dz4-vF-cDv" firstAttribute="centerY" secondItem="Eor-be-NUK" secondAttribute="centerY" id="sCl-mN-b8N"/>
+                                    <constraint firstAttribute="bottom" secondItem="m7y-zf-RTr" secondAttribute="bottom" constant="8" id="ya1-Gc-jNA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" placeholderIntrinsicWidth="294" placeholderIntrinsicHeight="77" translatesAutoresizingMaskIntoConstraints="NO" id="9Y6-WM-DZ3">
+                                <rect key="frame" x="0.0" y="304" width="294" height="77"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="taking temperature..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LU-Ak-pcY">
+                                        <rect key="frame" x="67" y="8" width="160" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="ML5-xI-vrY">
+                                        <rect key="frame" x="137" y="37" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.65739924630000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ML5-xI-vrY" firstAttribute="centerX" secondItem="9Y6-WM-DZ3" secondAttribute="centerX" id="5EE-Ft-Jt5"/>
+                                    <constraint firstItem="4LU-Ak-pcY" firstAttribute="centerX" secondItem="9Y6-WM-DZ3" secondAttribute="centerX" id="Ac5-Fe-1ml"/>
+                                    <constraint firstItem="4LU-Ak-pcY" firstAttribute="top" secondItem="9Y6-WM-DZ3" secondAttribute="top" constant="8" id="lbg-1n-8Iy"/>
+                                    <constraint firstItem="ML5-xI-vrY" firstAttribute="centerY" secondItem="9Y6-WM-DZ3" secondAttribute="centerY" id="vfl-uP-wx7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="firstView" destination="viF-NC-FbX" id="kst-To-MEk"/>
+                        <outlet property="secondView" destination="9Y6-WM-DZ3" id="vvc-Eh-W2p"/>
+                        <outlet property="tempLabel" destination="dz4-vF-cDv" id="il7-a8-AUp"/>
+                        <outlet property="thirdView" destination="Eor-be-NUK" id="H5C-wP-MYl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g2v-Mb-8kk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1732" y="716"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="HeartRate" width="200" height="200"/>
+        <image name="Thermometer" width="200" height="200"/>
+        <image name="forehead" width="500" height="500"/>
+    </resources>
+</document>

@@ -31,11 +31,6 @@ NXP QuickJack:
 
 
 # Contributors 
-Ammar Hazim
-Alex Lee
-Alejandro Silveyra
-Cage Johnson
-Sam Moser
-
+Ammar Hazim, Alex Lee, Alejandro Silveyra, Cage Johnson, and Sam Moser
 ![alt tag](images/team.jpg)
 

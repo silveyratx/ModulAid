@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0279D733FB36BC9BE5B84F7F /* libPods-ModulAid.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88657EF69FFC6C6A515E0ADA /* libPods-ModulAid.a */; };
+		A001A5BB1C7A8576008B0CCE /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001A5BA1C7A8575008B0CCE /* Temperature.swift */; };
+		A001A5BD1C7A8C7D008B0CCE /* TemperatureDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001A5BC1C7A8C7D008B0CCE /* TemperatureDAO.swift */; };
+		A068C1C91CBEC94300872225 /* User.plist in Resources */ = {isa = PBXBuildFile; fileRef = A068C1C81CBEC94300872225 /* User.plist */; };
+		A0754DDD1CC5596600FE693B /* SensorDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0754DDC1CC5596600FE693B /* SensorDAO.swift */; };
+		A0754DDF1CC5620F00FE693B /* PulseDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0754DDE1CC5620F00FE693B /* PulseDAO.swift */; };
+		A093980A1C87B39C00A3711A /* UserLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09398091C87B39C00A3711A /* UserLocator.swift */; };
+		A0B58C021C74FAD400670649 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C011C74FAD400670649 /* main.m */; };
+		A0B58C051C74FAD400670649 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C041C74FAD400670649 /* AppDelegate.m */; };
+		A0B58C081C74FAD400670649 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C071C74FAD400670649 /* ViewController.mm */; };
+		A0B58C0B1C74FAD400670649 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B58C091C74FAD400670649 /* Main.storyboard */; };
+		A0B58C0D1C74FAD400670649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B58C0C1C74FAD400670649 /* Assets.xcassets */; };
+		A0B58C101C74FAD400670649 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0B58C0E1C74FAD400670649 /* LaunchScreen.storyboard */; };
+		A0B58C1B1C74FAD400670649 /* ModulAidTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C1A1C74FAD400670649 /* ModulAidTests.m */; };
+		A0B58C261C74FAD400670649 /* ModulAidUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C251C74FAD400670649 /* ModulAidUITests.m */; };
+		A0B58C511C74FBA600670649 /* aurio_helper.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C461C74FBA600670649 /* aurio_helper.mm */; };
+		A0B58C521C74FBA600670649 /* CADebugMacros.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C481C74FBA600670649 /* CADebugMacros.mm */; };
+		A0B58C531C74FBA600670649 /* CAStreamBasicDescription.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C4B1C74FBA600670649 /* CAStreamBasicDescription.mm */; };
+		A0B58C541C74FBA600670649 /* CAXException.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C4D1C74FBA600670649 /* CAXException.mm */; };
+		A0B58C551C74FBA600670649 /* QuickJackApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C501C74FBA600670649 /* QuickJackApp.mm */; };
+		A0B58C571C74FC0100670649 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B58C561C74FC0100670649 /* OpenGLES.framework */; };
+		A0B58C591C74FC0B00670649 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B58C581C74FC0B00670649 /* QuartzCore.framework */; };
+		A0B58C5B1C74FC1500670649 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B58C5A1C74FC1500670649 /* CoreGraphics.framework */; };
+		A0B58C5D1C74FC1F00670649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B58C5C1C74FC1F00670649 /* Foundation.framework */; };
+		A0B58C5F1C74FC2900670649 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B58C5E1C74FC2900670649 /* UIKit.framework */; };
+		A0B58C611C74FC3200670649 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B58C601C74FC3200670649 /* AudioToolbox.framework */; };
+		A0B58C641C75042800670649 /* ModulAidViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B58C631C75042800670649 /* ModulAidViewController.swift */; };
+		A0CF32901CA9BCD3008B8A73 /* TemperatureData.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0CF328F1CA9BCD3008B8A73 /* TemperatureData.plist */; };
+		DA01F79C1C7510AD0091209B /* ModulAidCommunicator.mm in Sources */ = {isa = PBXBuildFile; fileRef = DA01F79B1C7510AD0091209B /* ModulAidCommunicator.mm */; };
+		DA1B4E741CA067A4000B10C7 /* HeartRateMonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B4E731CA067A4000B10C7 /* HeartRateMonitorViewController.swift */; };
+		DA1B4E761CA077CD000B10C7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B4E751CA077CD000B10C7 /* HistoryViewController.swift */; };
+		DA5967F71CA31341002BADB4 /* HeatMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5967F61CA31341002BADB4 /* HeatMapViewController.swift */; };
+		DA997DB21C84D98F004831DA /* TemperatureTakerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA997DB11C84D98F004831DA /* TemperatureTakerViewController.swift */; };
+		DAC9081E1CA6E4A7002E5244 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAC9081D1CA6E4A7002E5244 /* HomeViewController.swift */; };
+		DACEE0291CA9C1B300455FE1 /* quake.plist in Resources */ = {isa = PBXBuildFile; fileRef = DACEE0281CA9C1B300455FE1 /* quake.plist */; };
+		DAF290521CA70F4000D83200 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF290511CA70F4000D83200 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0B58C171C74FAD400670649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B58BF51C74FAD400670649 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B58BFC1C74FAD400670649;
+			remoteInfo = ModulAid;
+		};
+		A0B58C221C74FAD400670649 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A0B58BF51C74FAD400670649 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0B58BFC1C74FAD400670649;
+			remoteInfo = ModulAid;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22B1D69286AA44AF98198071 /* Pods-ModulAid.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModulAid.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModulAid/Pods-ModulAid.debug.xcconfig"; sourceTree = "<group>"; };
+		6DCA6567CCEC07FDE374442D /* Pods-ModulAid.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModulAid.release.xcconfig"; path = "Pods/Target Support Files/Pods-ModulAid/Pods-ModulAid.release.xcconfig"; sourceTree = "<group>"; };
+		88657EF69FFC6C6A515E0ADA /* libPods-ModulAid.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ModulAid.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A001A5BA1C7A8575008B0CCE /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
+		A001A5BC1C7A8C7D008B0CCE /* TemperatureDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureDAO.swift; sourceTree = "<group>"; };
+		A068C1C81CBEC94300872225 /* User.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = User.plist; sourceTree = "<group>"; };
+		A0754DDC1CC5596600FE693B /* SensorDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorDAO.swift; sourceTree = "<group>"; };
+		A0754DDE1CC5620F00FE693B /* PulseDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PulseDAO.swift; sourceTree = "<group>"; };
+		A09398091C87B39C00A3711A /* UserLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLocator.swift; sourceTree = "<group>"; };
+		A0B58BFD1C74FAD400670649 /* ModulAid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModulAid.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B58C011C74FAD400670649 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0B58C031C74FAD400670649 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A0B58C041C74FAD400670649 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A0B58C061C74FAD400670649 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A0B58C071C74FAD400670649 /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		A0B58C0A1C74FAD400670649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A0B58C0C1C74FAD400670649 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0B58C0F1C74FAD400670649 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A0B58C111C74FAD400670649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B58C161C74FAD400670649 /* ModulAidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModulAidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B58C1A1C74FAD400670649 /* ModulAidTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModulAidTests.m; sourceTree = "<group>"; };
+		A0B58C1C1C74FAD400670649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B58C211C74FAD400670649 /* ModulAidUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModulAidUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0B58C251C74FAD400670649 /* ModulAidUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModulAidUITests.m; sourceTree = "<group>"; };
+		A0B58C271C74FAD400670649 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0B58C451C74FBA600670649 /* aurio_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aurio_helper.h; sourceTree = "<group>"; };
+		A0B58C461C74FBA600670649 /* aurio_helper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = aurio_helper.mm; sourceTree = "<group>"; };
+		A0B58C471C74FBA600670649 /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		A0B58C481C74FBA600670649 /* CADebugMacros.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CADebugMacros.mm; sourceTree = "<group>"; };
+		A0B58C491C74FBA600670649 /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		A0B58C4A1C74FBA600670649 /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		A0B58C4B1C74FBA600670649 /* CAStreamBasicDescription.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAStreamBasicDescription.mm; sourceTree = "<group>"; };
+		A0B58C4C1C74FBA600670649 /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		A0B58C4D1C74FBA600670649 /* CAXException.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CAXException.mm; sourceTree = "<group>"; };
+		A0B58C4E1C74FBA600670649 /* QuickJack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickJack.h; sourceTree = "<group>"; };
+		A0B58C4F1C74FBA600670649 /* QuickJackApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickJackApp.h; sourceTree = "<group>"; };
+		A0B58C501C74FBA600670649 /* QuickJackApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QuickJackApp.mm; sourceTree = "<group>"; };
+		A0B58C561C74FC0100670649 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		A0B58C581C74FC0B00670649 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A0B58C5A1C74FC1500670649 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A0B58C5C1C74FC1F00670649 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A0B58C5E1C74FC2900670649 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A0B58C601C74FC3200670649 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A0B58C621C75042700670649 /* ModulAid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ModulAid-Bridging-Header.h"; sourceTree = "<group>"; };
+		A0B58C631C75042800670649 /* ModulAidViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModulAidViewController.swift; sourceTree = SOURCE_ROOT; };
+		A0CF328F1CA9BCD3008B8A73 /* TemperatureData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TemperatureData.plist; sourceTree = "<group>"; };
+		DA01F79B1C7510AD0091209B /* ModulAidCommunicator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ModulAidCommunicator.mm; sourceTree = "<group>"; };
+		DA01F79D1C7511420091209B /* ModulAidCommunicator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModulAidCommunicator.h; sourceTree = "<group>"; };
+		DA1B4E731CA067A4000B10C7 /* HeartRateMonitorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeartRateMonitorViewController.swift; sourceTree = "<group>"; };
+		DA1B4E751CA077CD000B10C7 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		DA5967F61CA31341002BADB4 /* HeatMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeatMapViewController.swift; sourceTree = "<group>"; };
+		DA997DB11C84D98F004831DA /* TemperatureTakerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureTakerViewController.swift; sourceTree = "<group>"; };
+		DAC9081D1CA6E4A7002E5244 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		DACEE0281CA9C1B300455FE1 /* quake.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quake.plist; sourceTree = "<group>"; };
+		DAF290511CA70F4000D83200 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A0B58BFA1C74FAD400670649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAF290521CA70F4000D83200 /* MapKit.framework in Frameworks */,
+				A0B58C611C74FC3200670649 /* AudioToolbox.framework in Frameworks */,
+				A0B58C5F1C74FC2900670649 /* UIKit.framework in Frameworks */,
+				A0B58C5D1C74FC1F00670649 /* Foundation.framework in Frameworks */,
+				A0B58C5B1C74FC1500670649 /* CoreGraphics.framework in Frameworks */,
+				A0B58C591C74FC0B00670649 /* QuartzCore.framework in Frameworks */,
+				A0B58C571C74FC0100670649 /* OpenGLES.framework in Frameworks */,
+				0279D733FB36BC9BE5B84F7F /* libPods-ModulAid.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B58C131C74FAD400670649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B58C1E1C74FAD400670649 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D3BF11BA3CCE860A2FC7650 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAF290511CA70F4000D83200 /* MapKit.framework */,
+				88657EF69FFC6C6A515E0ADA /* libPods-ModulAid.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0B58BF41C74FAD400670649 = {
+			isa = PBXGroup;
+			children = (
+				A068C1C81CBEC94300872225 /* User.plist */,
+				A0CF328F1CA9BCD3008B8A73 /* TemperatureData.plist */,
+				A09398091C87B39C00A3711A /* UserLocator.swift */,
+				A001A5BC1C7A8C7D008B0CCE /* TemperatureDAO.swift */,
+				A0754DDC1CC5596600FE693B /* SensorDAO.swift */,
+				A0754DDE1CC5620F00FE693B /* PulseDAO.swift */,
+				A001A5BA1C7A8575008B0CCE /* Temperature.swift */,
+				A0B58C601C74FC3200670649 /* AudioToolbox.framework */,
+				A0B58C5E1C74FC2900670649 /* UIKit.framework */,
+				A0B58C5C1C74FC1F00670649 /* Foundation.framework */,
+				A0B58C5A1C74FC1500670649 /* CoreGraphics.framework */,
+				A0B58C581C74FC0B00670649 /* QuartzCore.framework */,
+				A0B58C561C74FC0100670649 /* OpenGLES.framework */,
+				A0B58C441C74FBA600670649 /* Lib */,
+				A0B58BFF1C74FAD400670649 /* ModulAid */,
+				A0B58C191C74FAD400670649 /* ModulAidTests */,
+				A0B58C241C74FAD400670649 /* ModulAidUITests */,
+				A0B58BFE1C74FAD400670649 /* Products */,
+				A0B58C621C75042700670649 /* ModulAid-Bridging-Header.h */,
+				E9C83D35A63A2CADEFC0B677 /* Pods */,
+				1D3BF11BA3CCE860A2FC7650 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0B58BFE1C74FAD400670649 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A0B58BFD1C74FAD400670649 /* ModulAid.app */,
+				A0B58C161C74FAD400670649 /* ModulAidTests.xctest */,
+				A0B58C211C74FAD400670649 /* ModulAidUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A0B58BFF1C74FAD400670649 /* ModulAid */ = {
+			isa = PBXGroup;
+			children = (
+				DA01F79D1C7511420091209B /* ModulAidCommunicator.h */,
+				DA01F79B1C7510AD0091209B /* ModulAidCommunicator.mm */,
+				A0B58C031C74FAD400670649 /* AppDelegate.h */,
+				A0B58C041C74FAD400670649 /* AppDelegate.m */,
+				A0B58C061C74FAD400670649 /* ViewController.h */,
+				A0B58C071C74FAD400670649 /* ViewController.mm */,
+				A0B58C091C74FAD400670649 /* Main.storyboard */,
+				A0B58C0C1C74FAD400670649 /* Assets.xcassets */,
+				A0B58C0E1C74FAD400670649 /* LaunchScreen.storyboard */,
+				A0B58C111C74FAD400670649 /* Info.plist */,
+				A0B58C001C74FAD400670649 /* Supporting Files */,
+				A0B58C631C75042800670649 /* ModulAidViewController.swift */,
+				DAC9081D1CA6E4A7002E5244 /* HomeViewController.swift */,
+				DA997DB11C84D98F004831DA /* TemperatureTakerViewController.swift */,
+				DA1B4E731CA067A4000B10C7 /* HeartRateMonitorViewController.swift */,
+				DA1B4E751CA077CD000B10C7 /* HistoryViewController.swift */,
+				DA5967F61CA31341002BADB4 /* HeatMapViewController.swift */,
+			);
+			path = ModulAid;
+			sourceTree = "<group>";
+		};
+		A0B58C001C74FAD400670649 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DACEE0281CA9C1B300455FE1 /* quake.plist */,
+				A0B58C011C74FAD400670649 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0B58C191C74FAD400670649 /* ModulAidTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0B58C1A1C74FAD400670649 /* ModulAidTests.m */,
+				A0B58C1C1C74FAD400670649 /* Info.plist */,
+			);
+			path = ModulAidTests;
+			sourceTree = "<group>";
+		};
+		A0B58C241C74FAD400670649 /* ModulAidUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A0B58C251C74FAD400670649 /* ModulAidUITests.m */,
+				A0B58C271C74FAD400670649 /* Info.plist */,
+			);
+			path = ModulAidUITests;
+			sourceTree = "<group>";
+		};
+		A0B58C441C74FBA600670649 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				A0B58C451C74FBA600670649 /* aurio_helper.h */,
+				A0B58C461C74FBA600670649 /* aurio_helper.mm */,
+				A0B58C471C74FBA600670649 /* CADebugMacros.h */,
+				A0B58C481C74FBA600670649 /* CADebugMacros.mm */,
+				A0B58C491C74FBA600670649 /* CAMath.h */,
+				A0B58C4A1C74FBA600670649 /* CAStreamBasicDescription.h */,
+				A0B58C4B1C74FBA600670649 /* CAStreamBasicDescription.mm */,
+				A0B58C4C1C74FBA600670649 /* CAXException.h */,
+				A0B58C4D1C74FBA600670649 /* CAXException.mm */,
+				A0B58C4E1C74FBA600670649 /* QuickJack.h */,
+				A0B58C4F1C74FBA600670649 /* QuickJackApp.h */,
+				A0B58C501C74FBA600670649 /* QuickJackApp.mm */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		E9C83D35A63A2CADEFC0B677 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				22B1D69286AA44AF98198071 /* Pods-ModulAid.debug.xcconfig */,
+				6DCA6567CCEC07FDE374442D /* Pods-ModulAid.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A0B58BFC1C74FAD400670649 /* ModulAid */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B58C2A1C74FAD400670649 /* Build configuration list for PBXNativeTarget "ModulAid" */;
+			buildPhases = (
+				B446BD77398F18A1BF0E2888 /* Check Pods Manifest.lock */,
+				A0B58BF91C74FAD400670649 /* Sources */,
+				A0B58BFA1C74FAD400670649 /* Frameworks */,
+				A0B58BFB1C74FAD400670649 /* Resources */,
+				D0F8214C38E6C38F5839DEFF /* Embed Pods Frameworks */,
+				386794B2A5DC892A4FD37922 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ModulAid;
+			productName = ModulAid;
+			productReference = A0B58BFD1C74FAD400670649 /* ModulAid.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A0B58C151C74FAD400670649 /* ModulAidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B58C2D1C74FAD400670649 /* Build configuration list for PBXNativeTarget "ModulAidTests" */;
+			buildPhases = (
+				A0B58C121C74FAD400670649 /* Sources */,
+				A0B58C131C74FAD400670649 /* Frameworks */,
+				A0B58C141C74FAD400670649 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0B58C181C74FAD400670649 /* PBXTargetDependency */,
+			);
+			name = ModulAidTests;
+			productName = ModulAidTests;
+			productReference = A0B58C161C74FAD400670649 /* ModulAidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A0B58C201C74FAD400670649 /* ModulAidUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0B58C301C74FAD400670649 /* Build configuration list for PBXNativeTarget "ModulAidUITests" */;
+			buildPhases = (
+				A0B58C1D1C74FAD400670649 /* Sources */,
+				A0B58C1E1C74FAD400670649 /* Frameworks */,
+				A0B58C1F1C74FAD400670649 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0B58C231C74FAD400670649 /* PBXTargetDependency */,
+			);
+			name = ModulAidUITests;
+			productName = ModulAidUITests;
+			productReference = A0B58C211C74FAD400670649 /* ModulAidUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A0B58BF51C74FAD400670649 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = ModulAid;
+				TargetAttributes = {
+					A0B58BFC1C74FAD400670649 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = WR67EU3E5Y;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A0B58C151C74FAD400670649 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A0B58BFC1C74FAD400670649;
+					};
+					A0B58C201C74FAD400670649 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = A0B58BFC1C74FAD400670649;
+					};
+				};
+			};
+			buildConfigurationList = A0B58BF81C74FAD400670649 /* Build configuration list for PBXProject "ModulAid" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A0B58BF41C74FAD400670649;
+			productRefGroup = A0B58BFE1C74FAD400670649 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A0B58BFC1C74FAD400670649 /* ModulAid */,
+				A0B58C151C74FAD400670649 /* ModulAidTests */,
+				A0B58C201C74FAD400670649 /* ModulAidUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0B58BFB1C74FAD400670649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DACEE0291CA9C1B300455FE1 /* quake.plist in Resources */,
+				A068C1C91CBEC94300872225 /* User.plist in Resources */,
+				A0B58C101C74FAD400670649 /* LaunchScreen.storyboard in Resources */,
+				A0CF32901CA9BCD3008B8A73 /* TemperatureData.plist in Resources */,
+				A0B58C0D1C74FAD400670649 /* Assets.xcassets in Resources */,
+				A0B58C0B1C74FAD400670649 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B58C141C74FAD400670649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B58C1F1C74FAD400670649 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		386794B2A5DC892A4FD37922 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModulAid/Pods-ModulAid-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B446BD77398F18A1BF0E2888 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D0F8214C38E6C38F5839DEFF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ModulAid/Pods-ModulAid-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A0B58BF91C74FAD400670649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B58C081C74FAD400670649 /* ViewController.mm in Sources */,
+				A0B58C051C74FAD400670649 /* AppDelegate.m in Sources */,
+				A001A5BB1C7A8576008B0CCE /* Temperature.swift in Sources */,
+				A0B58C641C75042800670649 /* ModulAidViewController.swift in Sources */,
+				A0B58C511C74FBA600670649 /* aurio_helper.mm in Sources */,
+				DA1B4E741CA067A4000B10C7 /* HeartRateMonitorViewController.swift in Sources */,
+				A0754DDF1CC5620F00FE693B /* PulseDAO.swift in Sources */,
+				A0B58C021C74FAD400670649 /* main.m in Sources */,
+				A0754DDD1CC5596600FE693B /* SensorDAO.swift in Sources */,
+				A0B58C521C74FBA600670649 /* CADebugMacros.mm in Sources */,
+				A0B58C531C74FBA600670649 /* CAStreamBasicDescription.mm in Sources */,
+				A0B58C551C74FBA600670649 /* QuickJackApp.mm in Sources */,
+				A0B58C541C74FBA600670649 /* CAXException.mm in Sources */,
+				DA01F79C1C7510AD0091209B /* ModulAidCommunicator.mm in Sources */,
+				DA997DB21C84D98F004831DA /* TemperatureTakerViewController.swift in Sources */,
+				A001A5BD1C7A8C7D008B0CCE /* TemperatureDAO.swift in Sources */,
+				DAC9081E1CA6E4A7002E5244 /* HomeViewController.swift in Sources */,
+				DA1B4E761CA077CD000B10C7 /* HistoryViewController.swift in Sources */,
+				DA5967F71CA31341002BADB4 /* HeatMapViewController.swift in Sources */,
+				A093980A1C87B39C00A3711A /* UserLocator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B58C121C74FAD400670649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B58C1B1C74FAD400670649 /* ModulAidTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0B58C1D1C74FAD400670649 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0B58C261C74FAD400670649 /* ModulAidUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A0B58C181C74FAD400670649 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0B58BFC1C74FAD400670649 /* ModulAid */;
+			targetProxy = A0B58C171C74FAD400670649 /* PBXContainerItemProxy */;
+		};
+		A0B58C231C74FAD400670649 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A0B58BFC1C74FAD400670649 /* ModulAid */;
+			targetProxy = A0B58C221C74FAD400670649 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A0B58C091C74FAD400670649 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0B58C0A1C74FAD400670649 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A0B58C0E1C74FAD400670649 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A0B58C0F1C74FAD400670649 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A0B58C281C74FAD400670649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A0B58C291C74FAD400670649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A0B58C2B1C74FAD400670649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22B1D69286AA44AF98198071 /* Pods-ModulAid.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = ModulAid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modulaid.ModulAid2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ModulAid-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A0B58C2C1C74FAD400670649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DCA6567CCEC07FDE374442D /* Pods-ModulAid.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				INFOPLIST_FILE = ModulAid/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modulaid.ModulAid2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "ModulAid-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		A0B58C2E1C74FAD400670649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ModulAidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modulaid.ModulAidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModulAid.app/ModulAid";
+			};
+			name = Debug;
+		};
+		A0B58C2F1C74FAD400670649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ModulAidTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modulaid.ModulAidTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ModulAid.app/ModulAid";
+			};
+			name = Release;
+		};
+		A0B58C311C74FAD400670649 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ModulAidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modulaid.ModulAidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ModulAid;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A0B58C321C74FAD400670649 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ModulAidUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.modulaid.ModulAidUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ModulAid;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A0B58BF81C74FAD400670649 /* Build configuration list for PBXProject "ModulAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B58C281C74FAD400670649 /* Debug */,
+				A0B58C291C74FAD400670649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B58C2A1C74FAD400670649 /* Build configuration list for PBXNativeTarget "ModulAid" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B58C2B1C74FAD400670649 /* Debug */,
+				A0B58C2C1C74FAD400670649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B58C2D1C74FAD400670649 /* Build configuration list for PBXNativeTarget "ModulAidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B58C2E1C74FAD400670649 /* Debug */,
+				A0B58C2F1C74FAD400670649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0B58C301C74FAD400670649 /* Build configuration list for PBXNativeTarget "ModulAidUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0B58C311C74FAD400670649 /* Debug */,
+				A0B58C321C74FAD400670649 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A0B58BF51C74FAD400670649 /* Project object */;
+}

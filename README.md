@@ -37,5 +37,5 @@ Alejandro Silveyra
 Cage Johnson
 Sam Moser
 
-![alt tag](../images/team.jpg)
+![alt tag](images/team.jpg)
 

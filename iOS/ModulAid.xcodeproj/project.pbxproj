@@ -179,7 +179,7 @@
 				A0B58C581C74FC0B00670649 /* QuartzCore.framework */,
 				A0B58C561C74FC0100670649 /* OpenGLES.framework */,
 				A0B58C441C74FBA600670649 /* Lib */,
-				A0B58BFF1C74FAD400670649 /* ModulAid */,
+				A0B58BFF1C74FAD400670649 /* modulaidUI */,
 				A0B58C191C74FAD400670649 /* ModulAidTests */,
 				A0B58C241C74FAD400670649 /* ModulAidUITests */,
 				A0B58BFE1C74FAD400670649 /* Products */,
@@ -199,7 +199,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A0B58BFF1C74FAD400670649 /* ModulAid */ = {
+		A0B58BFF1C74FAD400670649 /* modulaidUI */ = {
 			isa = PBXGroup;
 			children = (
 				DA01F79D1C7511420091209B /* ModulAidCommunicator.h */,
@@ -220,7 +220,7 @@
 				DA1B4E751CA077CD000B10C7 /* HistoryViewController.swift */,
 				DA5967F61CA31341002BADB4 /* HeatMapViewController.swift */,
 			);
-			path = ModulAid;
+			path = modulaidUI;
 			sourceTree = "<group>";
 		};
 		A0B58C001C74FAD400670649 /* Supporting Files */ = {
@@ -636,7 +636,7 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				INFOPLIST_FILE = ModulAid/Info.plist;
+				INFOPLIST_FILE = modulaidUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.modulaid.ModulAid2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -659,7 +659,7 @@
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				INFOPLIST_FILE = ModulAid/Info.plist;
+				INFOPLIST_FILE = modulaidUI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.modulaid.ModulAid2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

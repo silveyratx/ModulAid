@@ -31,8 +31,7 @@ NXP QuickJack:
 
 
 # Contributors 
-Ammar Hazim, Alex Lee, Alejandro Silveyra, Cage Johnson, and Sam Moser
-   
+Alex Lee, Cage Johnson, Sam Moser, Alejandro Silveyra, and Ammar Hazim (in order of appearance)    
 Photo of team at UT Austin Electrical and Computer Engineering Senior Design Open House - Spring 2016
 ![alt tag](images/team.jpg)
 

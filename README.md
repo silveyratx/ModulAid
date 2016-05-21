@@ -20,16 +20,13 @@ Screenshot's of the iOS app
 Due to the project’s scope in the Senior Design class, ModulAid only supports two sensors, a thermometer, and a heart rate monitor. 
 
 ### Resources
-ModulAid draws from several other open-source projects and frameworks:
+ModulAid draws from several projects and frameworks:
 
-NXP QuickJack:
-http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0-mcus/lpc800-low-cost-cortex-m0-plus-mcus/om13069-smartphone-quick-jack-solution:OM13069
+NXP QuickJack: http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-cortex-m-mcus/lpc-cortex-m0-plus-m0-mcus/lpc800-low-cost-cortex-m0-plus-mcus/om13069-smartphone-quick-jack-solution:OM13069
 
-LFHeatMap:
-https://github.com/gpolak/LFHeatMap
+LFHeatMap: https://github.com/gpolak/LFHeatMap
 
-Firebase
-https://www.firebase.com/
+Firebase: https://www.firebase.com/
 
 ### Contributors 
 Alex Lee, Cage Johnson, Sam Moser, Alejandro Silveyra, and Ammar Hazim (in order of appearance)    

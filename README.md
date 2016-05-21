@@ -42,11 +42,12 @@ Here is a short video demonstrating the functionality: *insert link here*
 
 ### Going Forward
 Due to the project’s scope in the Senior Design class, ModulAid only supports two sensors, a thermometer, and a heart rate monitor. There are many ways the project could move forward with:   
+	-Add support for additional sensors
 	-Create user accounts to give more specialized health insights
 	-Create an Android app similiar to the iOS app
-	-
+	-Rework the firmware to deal with sensors in a more generic way, allowing new sensors to be added without updating the firmware.
 
--firmware needs to be made generic to truly be able to support new sensors without modifying the firmware
+We created this GitHub Repository to document our project and let it live on through the internet. We hope someone out there finds it useful, helpful or even inspiring. Furthermore, the platform is not limited to medical sensors and could be a base for all sorts of sensors.
 
 ### Resources
 ModulAid draws from several projects and frameworks:
@@ -60,6 +61,9 @@ Firebase: https://www.firebase.com/
 ### Contributors 
 Alex Lee, Cage Johnson, Sam Moser, Alejandro Silveyra, and Ammar Hazim (in order of appearance)    
 Photo of team at UT Austin Electrical and Computer Engineering Senior Design Open House - Spring 2016
+
+We would also like to thank our faculty mentor, Ramesh Yerraballi, for his support through out the project.
+
 ![alt tag](images/team.jpg)
 
 

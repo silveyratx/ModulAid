@@ -12,8 +12,7 @@ The ModulAid app was designed to make access to health information very cheap. T
 ModulAid makes insights about one’s community health possible by using FireBase to anonymously store health data with a location. One way to view community health data is to plot the location and severity of fever on a map. 
 
 The team ModulAid’s app heatmap which shows each user’s last temperature measurement on an Apple map. 
-
-//screen shot of heatmap
+![alt tag](images/iOS_heatmap.png)
 
 Due to the project’s scope in the Senior Design class, ModulAid only supports two sensors, a thermometer, and a heart rate monitor. 
 
@@ -31,7 +30,7 @@ NXP QuickJack:
 
 
 
-## Contributors 
+### Contributors 
 Alex Lee, Cage Johnson, Sam Moser, Alejandro Silveyra, and Ammar Hazim (in order of appearance)    
 Photo of team at UT Austin Electrical and Computer Engineering Senior Design Open House - Spring 2016
 ![alt tag](images/team.jpg)

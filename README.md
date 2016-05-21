@@ -1,6 +1,6 @@
-###### Modulaid
+# Modulaid
 
-# Background
+### Background
 ModulAid was born at UT Austin as a Senior Design Project for 5 Electrical Engineering students. Their senior design class was a special section called "Senior Design Startup" and the students thought up their own project rather than doing an industry sponsored project.
 
 ModulAid extends a smartphone by providing an easy to use interface for nearly any type of sensor. The team made one port which supports I^2C, UART, SPI, and any analog sensors (through an ACD which talks to the uProcessor through SPI). 
@@ -30,8 +30,10 @@ NXP QuickJack:
 	https://www.firebase.com/
 
 
-# Contributors 
+
+## Contributors 
 Alex Lee, Cage Johnson, Sam Moser, Alejandro Silveyra, and Ammar Hazim (in order of appearance)    
 Photo of team at UT Austin Electrical and Computer Engineering Senior Design Open House - Spring 2016
 ![alt tag](images/team.jpg)
+
 

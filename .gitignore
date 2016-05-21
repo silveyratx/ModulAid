@@ -155,3 +155,5 @@ fastlane/screenshots
 ### Objective-C Patch ###
 *.xcscmblueprint
 
+# vim
+*.swp

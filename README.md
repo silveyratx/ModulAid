@@ -5,9 +5,7 @@ ModulAid was born at UT Austin as a Senior Design Project for 5 Electrical Engin
 
 ModulAid extends a smartphone by providing an easy to use interface for many different types of sensors. The main hub plugs into the smartphone via the headphone jack. Through the connection with the headphone jack, the board is able to communicate with the iOS app as well as harvest power. Sensors can then be attached to the shared sensor board. The board acquires data from the sensors, transmits it to the smartphone, and from there it is displayed to the user.
 
-The team chose to focus on making ModulAid a system medical device. The ModulAid app was designed to make access to health information very cheap. The team wanted to make it as easy as possible for people to get insights about their own health and the health in their communities. 
-
-ModulAid makes insights about one’s community health possible by using FireBase to anonymously store health data with a location. One way to view community health data is to plot the location and severity of fever on a map. 
+The team chose to focus on making ModulAid a system for medical devices. The ModulAid app was designed to make access to health information very cheap. The team wanted to make it as easy as possible for people to get insights about their own health and the health in their communities. 
 
 ### Hardware
 Our initial development was done on the NXP Quick-Jack development kit. Then we designed a 2.4 x 1.45 inch PCB, shown below. The Quick-Jack acted as our reference design but with unnecessary components removed and additional components added to satisfy design requirements.
@@ -18,6 +16,8 @@ The right audio channel is dedicated to transferring power through a constant au
 
 Besides providing power to the sensors, the board must be able to communicate with them. We created our own sensor interface so that all our sensors connect through the same port. All our compatible sensors fall into two categories, either those that produce an analog voltage signal or those that communicate through a peripheral on the microcontroller. We added a 2 channel 10-bit ADC (MCP3002) and a dual SPDT (single pole double throw) analog switch (TS3A24157). The signal lines from the sensor port connect to the common inputs of the SPDT switch. The firmware controls the input to the switch to either connect the sensor signals to the ADC or directly to the microcontroller. The schematic is included in the Hardware directory.
 
+![alt tag](images/PCB_combo.png)
+
 ### Firmware
 The firmware runs on the microcontroller of the ModulAid board. The purpose of the firmware is to create a channel of communication between the smartphone and the various sensors. The firmware receives commands from the smartphone, initializes the hardware, acquires data, and sends the data to the smartphone. Upon reset of the device, the firmware performs the needed initialization for the device, then waits to receive a command from the phone. The command tells the firmware which sensor the user has selected. This is necessary because each sensor communicates with the board differently and requires a unique initialization. For example, the board uses I2C (Inter-Integrated Circuit) to communicate with the IR thermometer, but reads a voltage through the ADC (Analog to Digital Converter) with SPI (Serial Peripheral Interface) for the pulse sensor.
 
@@ -27,10 +27,10 @@ For all sensors that don’t make use of the ADC, the input to the dual SPDT swi
 
 SPI could be added if one more signal line added between microcontroller and sensor port
 
-![alt tag](images/PCB_combo.png)
-
 ### iOS Application
 *info about iOS app here*
+
+ModulAid makes insights about one’s community health possible by using FireBase to anonymously store health data with a location. One way to view community health data is to plot the location and severity of fever on a map. 
 
 The team ModulAid’s app heatmap which shows each user’s last temperature measurement on an Apple map.
 

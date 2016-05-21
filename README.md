@@ -27,8 +27,8 @@ For all sensors that don’t make use of the ADC, the input to the dual SPDT swi
 
 SPI could be added if one more signal line added between microcontroller and sensor port
 
-![alt tag](../images/PCB_front.png)
-![alt tag](../images/PCB_back.png)
+![alt tag](images/PCB_front.png)
+![alt tag](images/PCB_back.png)
 
 ### iOS Application
 *info about iOS app here*

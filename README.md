@@ -1,7 +1,7 @@
 # Modulaid
 
 ### Overview
-ModulAid was born at UT Austin as a Senior Design Project for 5 Electrical Engineering [students](### Contributors). Their senior design class was a special section called "Startup Senior Design" and the students thought up their own project rather than doing an industry or faculty sponsored project.
+ModulAid was born at UT Austin as a Senior Design Project for 5 Electrical Engineering [students](#contributors). Their senior design class was a special section called "Startup Senior Design" and the students thought up their own project rather than doing an industry or faculty sponsored project.
 
 ModulAid extends a smartphone by providing an easy to use interface for many different types of sensors. The main hub plugs into the smartphone via the headphone jack. Through the connection with the headphone jack, the board is able to communicate with the iOS app as well as harvest power. Sensors can then be attached to the shared sensor board. The board acquires data from the sensors, transmits it to the smartphone, and from there it is displayed to the user.
 

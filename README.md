@@ -41,13 +41,14 @@ All collected data is stored anonymously to a FireBase database. Along with the 
 Here is a short video demonstrating the functionality: *insert link here*
 
 ### Going Forward
-Due to the project’s scope in the Senior Design class, ModulAid only supports two sensors, a thermometer, and a heart rate monitor. There are many ways the project could move forward with:      
+Due to the project’s scope in the Senior Design class, ModulAid only supports two sensors, a thermometer, and a heart rate monitor. There are many ways the project could move forward:      
 	-Add support for additional sensors     
 	-Create user accounts to give more specialized health insights      
 	-Create an Android app similiar to the iOS app       
 	-Rework the firmware to deal with sensors in a more generic way, allowing new sensors to be added without updating the firmware.    
+-and probably many more..
 
-We created this GitHub Repository to document our project and let it live on through the internet. We hope someone out there finds it useful, helpful or even inspiring. Furthermore, the platform is not limited to medical sensors and could be a base for all sorts of sensors.
+We created this GitHub Repository to document our project and let it live on through the internet. We hope someone out there finds it useful, helpful or even inspiring. Furthermore, the platform is not limited to medical sensors and could be a base for interfacing all sorts of sensors with a smartphone.
 
 ### Resources
 ModulAid draws from several projects and frameworks:

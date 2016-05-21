@@ -9,11 +9,6 @@ The team chose to focus on making ModulAid a system medical device. The ModulAid
 
 ModulAid makes insights about one’s community health possible by using FireBase to anonymously store health data with a location. One way to view community health data is to plot the location and severity of fever on a map. 
 
-The team ModulAid’s app heatmap which shows each user’s last temperature measurement on an Apple map.
-
-Screenshot's of the iOS app
-![alt tag](images/screenshot_combo.png)
-
 ### Hardware
 Our initial development was done on the NXP Quick-Jack development kit. Then we designed a 2.4 x 1.45 inch PCB, shown below. The Quick-Jack acted as our reference design but with unnecessary components removed and additional components added to satisfy design requirements.
 
@@ -34,6 +29,15 @@ SPI could be added if one more signal line added between microcontroller and sen
 
 ![alt tag](../images/PCB_front.png)
 ![alt tag](../images/PCB_back.png)
+
+### iOS Application
+*info about iOS app here*
+
+The team ModulAid’s app heatmap which shows each user’s last temperature measurement on an Apple map.
+
+Screenshot's of the iOS app
+![alt tag](images/screenshot_combo.png)
+
 
 ### demo
 Here is a short video demonstrating the functionality: *insert link here*

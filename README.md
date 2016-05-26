@@ -5,7 +5,7 @@ ModulAid was born at UT Austin as a Senior Design Project for 5 Electrical Engin
 
 ModulAid extends a smartphone by providing an easy to use interface for many different types of sensors. The main hub plugs into the smartphone via the headphone jack. Through the connection with the headphone jack, the board is able to communicate with the iOS app as well as harvest power. Sensors can then be attached to the shared sensor board. The board acquires data from the sensors, transmits it to the smartphone, and from there it is displayed to the user.
 
-The team chose to focus on making ModulAid a system for medical devices. The ModulAid app was designed to make access to health information very cheap. The team wanted to make it as easy as possible for people to get insights about their own health and the health in their communities. 
+The team chose to focus on making ModulAid a system for medical devices. The ModulAid app was designed to make access to health information very cheap. The team wanted to make it as easy as possible for people to get insights about their own health and the health in their communities.
 
 ### Hardware
 Our initial development was done on the NXP Quick-Jack development kit. Then we designed a 2.4 x 1.45 inch PCB, shown below. The Quick-Jack acted as our reference design but with unnecessary components removed and additional components added to satisfy design requirements.
@@ -38,7 +38,7 @@ All collected data is stored anonymously to a FireBase database. Along with the 
 
 
 ### Demo
-Here is a short video demonstrating the functionality: *insert link here*
+Here is a short video demonstrating the functionality: https://vimeo.com/168209562
 
 ### Going Forward
 Due to the project’s scope in the Senior Design class, ModulAid only supports two sensors, a thermometer, and a heart rate monitor. There are many ways the project could move forward:      
@@ -59,12 +59,10 @@ LFHeatMap: https://github.com/gpolak/LFHeatMap
 
 Firebase: https://www.firebase.com/
 
-### Contributors 
+### Contributors
 Alex Lee, Cage Johnson, Sam Moser, Alejandro Silveyra, and Ammar Hazim (in order of appearance)    
 Photo of team at UT Austin Electrical and Computer Engineering Senior Design Open House - Spring 2016
 
 We would also like to thank our faculty mentor, Ramesh Yerraballi, for his support through out the project.
 
 ![alt tag](images/team.jpg)
-
-
